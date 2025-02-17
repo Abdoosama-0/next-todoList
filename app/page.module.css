@@ -1,0 +1,168 @@
+/* styles/Home.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+
+  margin: auto;
+  color: #007bff;
+
+ 
+}
+
+
+
+  .inputContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+
+.input {
+ 
+  width: 80%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #0056b3;
+}
+
+.addButton{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.addButton:hover{
+  background-color: #0056b3;
+}
+/* =================================================================== */
+.itemContainer {
+  display: block;
+  align-items: center;
+  gap: 10px;
+
+  width:100%; 
+  }
+
+
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 8px;
+  width: 80%;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+.button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.update {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ========================================================================= */
+/* خلفية المشوشة عند فتح النافذة */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* تأثير التمويه */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* تصميم محتوى النافذة */
+.modalContent {
+  background: white;
+  color:#0056b3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* زر الحفظ */
+.saveButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px;
+}
+
+/* زر الإلغاء */
+.closeButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px;
+}
+
+/* ترتيب الأزرار */
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+
+
+
+
