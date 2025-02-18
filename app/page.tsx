@@ -73,7 +73,7 @@ export default function Home() {
 
   {items.map((item, index) => (
     <li className={styles.item} key={index}>
-      {item}
+     <span className={styles.span} >{item}</span>
       <div className="taksButtons">
         <button className={styles.delete} onClick={() => handleDel(index)}>del</button>
         <button className={styles.update} onClick={() => handleEdit(index)}>update</button>

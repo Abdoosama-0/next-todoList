@@ -75,12 +75,19 @@ font-weight:  16px;
   border-radius: 5px;
  margin: auto;
  margin-top: 6px;
-
+gap: 5px;
+flex-wrap: wrap;
   width: 80%;
+
+  
 }
 
-
-
+.span{
+  max-width: 100%; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
 
 .delete {
 
@@ -88,8 +95,8 @@ font-weight:  16px;
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 8px ;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -97,9 +104,10 @@ font-weight:  16px;
   background-color: green;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 8px;
+  border-radius: 10px;
   cursor: pointer;
+ 
 }
 
 /* ========================================================================= */
@@ -113,10 +121,12 @@ font-weight:  16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  z-index: 1000; /* تأكد من أنها فوق كل العناصر الأخرى */
+   
   /* تأثير التمويه */
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
+
 }
 
 /* تصميم محتوى النافذة */
