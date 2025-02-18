@@ -58,7 +58,7 @@ export default function Home() {
   {/* ========================================================================================================= */}
       <h1 >To Do List</h1>
 {/* ========================================================================================================= */}
-   <div className={styles.inputContainer}>
+<div className={styles.inputContainer}>
       <input className={styles.input}
         type="text"
         value={input}
@@ -67,19 +67,20 @@ export default function Home() {
       />
       <button className={styles.addButton} onClick={handleAdd}>إضافة</button> {/**1111111111111 */}
       </div>
+
 {/* ========================================================================================================= */}
       
-<div className={styles.itemContainer}>
+
   {items.map((item, index) => (
     <li className={styles.item} key={index}>
       {item}
-      <div className={styles.buttons}>
-        <button className={styles.button} onClick={() => handleDel(index)}>del</button>
+      <div className="taksButtons">
+        <button className={styles.delete} onClick={() => handleDel(index)}>del</button>
         <button className={styles.update} onClick={() => handleEdit(index)}>update</button>
-      </div>
+   </div>
     </li>
   ))}
-</div>
+
 
 {/* ========================================================================================================= */}
    
@@ -88,7 +89,7 @@ export default function Home() {
           <div className={styles.modalContent}>
             {/* ========================================================================================================= */}
             <h3>تعديل المهمة</h3>
-            <input
+            <input className={styles.updateInput}
               type="text"
               value={editText}
               onChange={(e) => setEditText(e.target.value)}

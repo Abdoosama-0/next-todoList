@@ -1,14 +1,9 @@
 /* styles/Home.module.css */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 15px rgb(0, 183, 255);
   max-width: 600px;
   text-align: center;
 
@@ -16,25 +11,34 @@
   color: #007bff;
 
  
+
 }
 
 
 
   .inputContainer {
+      
     display: flex;
-    width: 100%;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #a4d0ff;
+    border-radius: 30px;
+
+    margin-bottom: 8px;
+    margin-top: 6px;
+    padding-left: 2px;
   
   }
 
-
 .input {
- 
-  width: 80%;
-  padding: 8px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+width: 80%;
+   /* يجعل الحقل يأخذ المساحة المتاحة */
+  border: none;
+  outline: none;
+ background: transparent;
+ padding: 10px;
+font-weight:  16px;
 }
 
 .input:focus {
@@ -42,25 +46,22 @@
 }
 
 .addButton{
-  background-color: #007bff;
+  flex:1;
+ 
+  background-color: #2a83e3;
   color: white;
   border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: 10px ;
+  border-radius: 40px;
   cursor: pointer;
+
   font-size: 16px;
 }
 .addButton:hover{
   background-color: #0056b3;
 }
 /* =================================================================== */
-.itemContainer {
-  display: block;
-  align-items: center;
-  gap: 10px;
 
-  width:100%; 
-  }
 
 
 
@@ -72,19 +73,18 @@
   color: white;
   padding: 8px;
   border-radius: 5px;
-  margin-top: 8px;
+ margin: auto;
+ margin-top: 6px;
+
   width: 80%;
 }
 
 
-.buttons {
-  display: flex;
-  gap: 5px;
-}
 
 
+.delete {
 
-.button {
+ margin-right: 4px;
   background-color: red;
   color: white;
   border: none;
@@ -129,6 +129,7 @@
   max-width: 400px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
 }
 
 /* زر الحفظ */
@@ -137,7 +138,7 @@
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
   width: 100px;
@@ -149,7 +150,7 @@
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
   width: 100px;
@@ -159,10 +160,16 @@
 .buttonContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
   margin-top: 10px;
+
 }
 
 
-
-
-
+.updateInput{
+  margin-top: 5px;
+  width: 80%;
+  border-radius: 8px;
+  padding: 7px;
+}
